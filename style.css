@@ -1,0 +1,63 @@
+body{
+  background-color: rgb(254, 183, 195);
+}
+
+
+.Heading{
+  font-size: 1000%;
+  display: flex;
+  justify-content: center;
+}
+
+.Buttons{
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.But{
+  margin-top: 5%;
+  font-size: 20px;
+  height: 70px;
+  width: 220px;
+  font-size: 40px;
+  border-radius: 10px;
+  font-style: italic;
+  font-family: cursive;
+  margin-left: 50px;
+  justify-content: center;
+  background-color: black;
+  color: beige;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+#Greeting{
+  display: none;
+  font-size: 39.67px;
+  color: #c71585;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Heading {
+      font-size: 12vw; /* Larger text for smaller screens */
+  }
+
+  .Buttons {
+      flex-direction: column; /* Stack buttons on smaller screens */
+      align-items: center;
+  }
+
+  .But {
+      width: 90%; /* Full-width buttons for better mobile UX */
+      font-size: 5vw;
+      margin: 10px 0; /* Space between stacked buttons */
+  }
+
+  #Greeting {
+      font-size: 5vw;
+  }
+}
